@@ -1,3 +1,5 @@
+![coc-fnal.png](_support%2Fcoc-fnal.png)
+
 # Étape 1 - Titre et description
 * Créer un nouveau composant Vue.js dans le fichier `js/main.js` lié à la 
   `<div id="app">` du fichier `index.html`.
