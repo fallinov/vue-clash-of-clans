@@ -55,6 +55,18 @@ const app = createApp({
           formation: 30,
           vitesse: 32,
           cout: 100
+        },
+        {
+          id: 5,
+          nom: 'Dragon',
+          description: 'Les dragons sont connus à travers tout le territoire pour leur puissance sans égal. Cette terreur écailleuse du ciel ne montre aucune pitié ; et rien n\'échappe à son souffle mortel.',
+          image: 'dragon.png',
+          imageFond: 'dragon-bg.jpg',
+          couleur: '#5F3A59',
+          niveau: 2,
+          formation: 720,
+          vitesse: 16,
+          cout: 12000
         }
       ]
     }
