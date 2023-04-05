@@ -109,3 +109,4 @@ Ajouter le style dynamique aux cartes :
 # Sources 
 * https://codepen.io/drehimself/pen/QNXpyp/
 * https://clashofclans.fandom.com/fr/wiki/Troupes_normales
+* https://www.remove.bg/fr
