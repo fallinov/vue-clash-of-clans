@@ -41,11 +41,12 @@ button:hover {
 }
 
 header {
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 2rem;
     text-align: center;
 }
 
-header h1, header .description {
+header h1,
+header .description {
     font-size: 3.25rem;
     color: white;
     text-shadow: 1px 1px 2px black; /* offset-x | offset-y | blur-radius | color */
@@ -103,12 +104,14 @@ ul.cartes li {
 article header {
     position: relative;
     height: 230px;
+    padding: 0;
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+    text-align: center;
 }
 
-header img {
+article header img {
     width: 400px;
     position: absolute;
     top: -65px;
@@ -123,7 +126,7 @@ article .level {
     margin-bottom: 3px;
 }
 
-article h1 {
+article h2 {
     font-size: 26px;
     color: black;
     font-weight: 900;
