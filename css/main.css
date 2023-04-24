@@ -132,11 +132,14 @@ article h1 {
 
 article p.description {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 /*** Footer ***/
 article footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     color: white;
     font-weight: 700;
     border-bottom-left-radius: 14px;
