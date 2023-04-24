@@ -41,11 +41,12 @@ button:hover {
 }
 
 header {
-    padding: 0 1rem 1rem;
+    padding: 0 1rem 2rem;
     text-align: center;
 }
 
-header h1, header .description {
+header h1,
+header .description {
     font-size: 3.25rem;
     color: white;
     text-shadow: 1px 1px 2px black; /* offset-x | offset-y | blur-radius | color */
@@ -83,7 +84,7 @@ ul.cartes {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+
 }
 
 /*** Une carte ***/
@@ -103,16 +104,18 @@ ul.cartes li {
 article header {
     position: relative;
     height: 230px;
+    padding: 0;
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+    text-align: center;
 }
 
-header img {
-    max-width: calc(100% + 160px);
-    max-height: 350px;
-    margin-top: -80px;
-    margin-left: -80px;
+article header img {
+    width: 400px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
 }
 
 /*** Contenu ***/
@@ -123,7 +126,7 @@ article .level {
     margin-bottom: 3px;
 }
 
-article h1 {
+article h2 {
     font-size: 26px;
     color: black;
     font-weight: 900;
@@ -132,11 +135,14 @@ article h1 {
 
 article p.description {
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 /*** Footer ***/
 article footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     color: white;
     font-weight: 700;
     border-bottom-left-radius: 14px;
