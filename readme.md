@@ -1,6 +1,7 @@
+# Exercice 1 - Clash of Clans
 ![coc-fnal.png](_support%2Fcoc-fnal.png)
 
-# Étape 1 - Titre et description
+## Étape 1 - Titre et description
 * Créer un nouveau composant Vue.js dans le fichier `js/main.js` lié à la 
   `<div id="app">` du fichier `index.html`.
 * Créer les données `data()` permettant d'afficher de manière dynamique le 
@@ -10,12 +11,12 @@
    * **Description:** `Construire un village, former un clan et participer à des 
    guerres de clans épiques !`
 ---
-# Étape 2 - Liens dynamiques
+## Étape 2 - Liens dynamiques
 * Ajouter de manière dynamique le lien vers le site officiel de _Clash of 
   Clans_ aux liens `<a href="...">` de l'entête et du pied de page.
   * **Lien:** `https://supercell.com/en/games/clashofclans/`
 ---
-# Étape 3 - Données des cartes
+## Étape 3 - Données des cartes
 * Ajouter les informations des _troupes_ aux `data()` de votre composant Vue.js
 * Créer une boucle avec la directive `v-for` qui affiche toutes les 
   _troupes_ voir le tableau ci-dessous. Ne pas oublier de spécifier la clé 
@@ -100,7 +101,7 @@
 ]
 ```
 ---
-# Étape 4 - Style de la carte
+## Étape 4 - Style de la carte
 Ajouter le style dynamique aux cartes :
 * Changer l'image de fond du `<header>` de la carte en fonction de la 
   _troupe_
