@@ -7,6 +7,7 @@ const app = createApp({
       description: 'Construire un village, former un clan et participer à' +
         ' des guerres de clans épiques !',
       site: 'https://supercell.com/en/games/clashofclans/',
+      totalOr: 20000,
       troupes: [
         {
           id: 1,
@@ -69,6 +70,11 @@ const app = createApp({
           cout: 12000
         }
       ]
+    }
+  },
+  methods: {
+    formerTroupe(cout) {
+      this.totalOr -= cout
     }
   }
 }).mount('#app')
