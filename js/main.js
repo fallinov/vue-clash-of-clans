@@ -74,7 +74,11 @@ const app = createApp({
   },
   methods: {
     formerTroupe(cout) {
-      this.totalOr -= cout
+      if(this.totalOr >= cout) {
+        alert("Vous n'avez pas assez d'or mon seigneur !");
+        return;
+      }
+      this.totalOr -= cout;
     }
   }
 }).mount('#app')
