@@ -143,7 +143,7 @@ ul.cartes {
     margin: 2rem auto 80px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
 
 }
 
