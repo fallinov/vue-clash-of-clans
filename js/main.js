@@ -8,6 +8,7 @@ const app = createApp({
       site: 'https://supercell.com/en/games/clashofclans/',
       totalOr: 20000,
       filtreNiveau: 0,
+      tri: 'nom',
       troupes: [
         {
           id: 1,
@@ -84,6 +85,12 @@ const app = createApp({
   computed: {
     troupesFiltrees() {
       return this.troupes.filter(troupe => troupe.niveau >= this.filtreNiveau);
+    },
+    troupesTriees() {
+      let propriete = this.tri;
+      return this.troupesFiltrees.sort((a, b) => {a.cout - b.cout});
+      // return this.troupesFiltrees.sort((a, b) =>
+      // {a[this.tri].localeCompare(b[this.tri])});
     }
   }
 }).mount('#app');

@@ -44,6 +44,18 @@
                 </label>
             </fieldset>
         </div>
+        <div class="filtres">
+            <fieldset>
+                <legend>Tri</legend>
+               <select v-model="tri">
+                   <option value="nom">Nom</option>
+                   <option value="niveau">Niveau</option>
+                   <option value="cout">Coût</option>
+                   <option value="formation">Formation</option>
+                   <option value="vitesse">Vitesse</option>
+               </select>
+            </fieldset>
+        </div>
     </div>
     <header>
         <h1>{{ titre }}</h1>
@@ -54,7 +66,7 @@
     </header>
     <main>
         <ul class="cartes">
-            <li v-for="troupe in troupesFiltrees" :key="troupe.id">
+            <li v-for="troupe in troupesTriees" :key="troupe.id">
                 <article>
                     <header :style="`background: url('../img/${ troupe.imageFond }')`">
                         <img :src="'img/' + troupe.image" :alt="troupe.nom"/>
