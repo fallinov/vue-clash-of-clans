@@ -1,5 +1,4 @@
-const { createApp } = Vue
-
+const { createApp } = Vue;
 const app = createApp({
   data() {
     return {
@@ -8,6 +7,7 @@ const app = createApp({
         ' des guerres de clans épiques !',
       site: 'https://supercell.com/en/games/clashofclans/',
       totalOr: 20000,
+      filtreNiveau: 0,
       troupes: [
         {
           id: 1,
@@ -80,5 +80,10 @@ const app = createApp({
       }
       this.totalOr -= cout;
     }
+  },
+  computed: {
+    troupesFiltrees() {
+      return this.troupes.filter(troupe => troupe.niveau >= this.filtreNiveau);
+    }
   }
-}).mount('#app')
+}).mount('#app');
